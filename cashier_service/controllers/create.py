@@ -64,4 +64,4 @@ class ContentTypeError(RuntimeError):
 @process.errorhandler(ContentTypeError)
 def content_type_error(e):
     return jsonify(message='Request must be JSON'), \
-           HTTPStatus.UNSUPPORTED_MEDIA_TYPE
+        HTTPStatus.UNSUPPORTED_MEDIA_TYPE
